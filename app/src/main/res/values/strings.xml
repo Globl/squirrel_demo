@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">美师优课</string>
+    <string name="app_login">登录</string>
+    <string name="app_username">请输入用户名</string>
+    <string name="app_password">请输入密码</string>
+</resources>
