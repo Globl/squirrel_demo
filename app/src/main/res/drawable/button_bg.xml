@@ -3,6 +3,6 @@
     <item android:drawable="@drawable/mybutton_normal"
         android:state_pressed="false"></item>
     <item android:drawable="@drawable/mybutton_pressed"
-        android:state_pressed="true"> </item>
+        android:state_pressed="true"></item>
 
 </selector>
