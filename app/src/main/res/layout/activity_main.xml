@@ -10,24 +10,58 @@
     <LinearLayout
         android:id="@+id/login_layout"
         android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <EditText
+            android:id="@+id/app_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/app_username"/>
-        <EditText
-            android:layout_width="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/img_login_logo"
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/app_password"/>
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_login_user"
+                android:scaleType="fitCenter"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/app_username"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_login_pwd"
+                android:scaleType="fitCenter"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/app_password"
+                />
+        </LinearLayout>
+
             <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+                android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
             android:background="@drawable/button_bg"
             android:text="@string/app_login"
+                android:textColor="@color/login_btn_text"
             />
 
 
